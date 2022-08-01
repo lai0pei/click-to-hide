@@ -1,0 +1,39 @@
+{
+  "name": "Click to Hide",
+  "description": "Click to hide any thing you dont want to see on webpage and restore on refresh the webpage",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+       "*://*/*"
+      ],
+      "all_frames": false,
+      "js": ["js/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "img/icon.png",
+      "32": "img/icon.png",
+      "48": "img/icon.png",
+      "128": "img/icon.png"
+    }
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "32": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  }
+
+}

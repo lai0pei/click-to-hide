@@ -1,0 +1,33 @@
+#container {
+  margin : auto;
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+#bgr {
+  height: 200px;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  margin : auto;
+}
+
+.normal {
+  background-image: url("../img/normal.png");
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.hide{
+  background: url("../img/hide.png") no-repeat center top;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+#text{
+  margin : auto;
+  text-align: center;
+}
+
